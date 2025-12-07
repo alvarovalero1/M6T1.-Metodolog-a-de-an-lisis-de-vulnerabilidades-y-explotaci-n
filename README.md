@@ -13,17 +13,15 @@ Para garantizar un análisis eficiente y reproducible, se ha automatizado el des
 *   **Immunity Debugger:** Depurador principal utilizado para el análisis dinámico y la inspección de registros (CPU Registers) en tiempo real.
 *   **Python 3:** Motor de ejecución para los scripts de *fuzzing* y *exploit development*.
 *   **Netcat:** Herramienta de red para la interacción inicial y pruebas de conectividad.
+*   <img width="872" height="284" alt="image" src="https://github.com/user-attachments/assets/3bddd2c6-5ff0-4109-b139-507b315b9ac0" />
 
-> **Configuración del Sistema:** Se ha trabajado sobre una máquina virtual Windows 10.
-
-<img width="872" height="284" alt="image" src="https://github.com/user-attachments/assets/8bd1f611-7e84-4f97-8320-9e09a183fe90" />
 
 ## 3. Metodología de Análisis
 
 ### Fase 1: Identificación (Fuzzing)
 El primer paso consistió en someter al binario a un proceso de *Fuzzing* (pruebas de estrés). Utilizando un script personalizado en Python, se enviaron cadenas de caracteres de longitud incremental al comando `TRUN` del servidor.
 
-**Resultado:** El servicio dejó de responder tras recibir un paquete cercano a los 3000 bytes, confirmando una posible vulnerabilidad de desbordamiento de búfer (*Buffer Overflow*).
+**Resultado:** El servicio dejó de responder tras recibir un paquete cercano a los 2000 bytes, confirmando una posible vulnerabilidad de desbordamiento de búfer (*Buffer Overflow*).
 
 <img width="349" height="324" alt="image" src="https://github.com/user-attachments/assets/86d4a08f-958d-4ac7-98ed-9b10cef3f791" />
 
