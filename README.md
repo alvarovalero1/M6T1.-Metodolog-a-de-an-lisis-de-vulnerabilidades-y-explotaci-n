@@ -1,5 +1,4 @@
-# M6T1.-Metodolog-a-de-an-lisis-de-vulnerabilidades-y-explotaci-n
-# Metodología de Análisis de Vulnerabilidades y Explotación
+# M6T1.-Metodología de Análisis de Vulnerabilidades y Explotación
 
 **Autor:** [Álvaro Valero]  
 
