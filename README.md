@@ -49,7 +49,9 @@ A continuación se envió un payload de prueba `2003 'A' + 'BBBB'`, observándos
    Se generó un patrón cíclico y se envió tras 2000 bytes de relleno.  
    El crash mostró en Immunity un EIP con el valor `0x41316141`, que se correlacionó con una posición concreta del patrón, obteniendo un offset efectivo de **2003 bytes** para este entorno y prefijo.
    <img width="344" height="23" alt="image" src="https://github.com/user-attachments/assets/53dca074-cbb6-4305-afc7-70cedb6dced5" />
+   
    Posteriormente se verificó enviando `2003 'A' + 'BBBB'` y observando `EIP = 0x42424242` en el debugger, demostrando control total del puntero de instrucción.
+   
    <img width="345" height="32" alt="image" src="https://github.com/user-attachments/assets/825f9d51-0406-4362-a3da-08d8bf45f22e" />
 
 4. **Localización de un gadget de salto (`JMP ESP`)**  
