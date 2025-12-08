@@ -61,6 +61,8 @@ A continuación se envió un payload de prueba `2003 'A' + 'BBBB'`, observándos
    Como prueba de concepto de RCE se construyó un payload formado por:  
    `padding (2003 bytes) + dirección JMP ESP (0x625011AF) + NOPs + bytes \xCC (INT3)`.  
    Al enviarlo, Immunity se detuvo mostrando una interrupción `INT3` en el código inyectado, lo que confirma que el proceso estaba ejecutando instrucciones controladas por el atacante.
+
+   
    <img width="292" height="48" alt="Evidencia_4_RCE_INT3" src="https://github.com/user-attachments/assets/3d6f7fec-912b-4884-a4ff-a108a92705d0" />
 
 Este ejemplo demuestra de forma práctica las fases de la metodología propuesta: descubrimiento (fuzzing), análisis del crash, cálculo de offset, manipulación de EIP y ejecución de código controlado.
